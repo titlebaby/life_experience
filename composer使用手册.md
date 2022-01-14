@@ -12,6 +12,7 @@
 
  ### 查看所配置得镜像
  ```
+ composer dump-autoload
  composer config -l -g
  ```
 
@@ -30,7 +31,7 @@ composer require "XXXX:~1.0.1" ## 指定版本
 
  ### 明明下载了指定包，还是找不到,运行重新加载
  ```
- composer dump-autoload
+
  ```
 
 
