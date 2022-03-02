@@ -15,7 +15,7 @@
 - innerjoin、 leftjoin和rightjoin的区别？[参考资料](https://developer.aliyun.com/article/487015)
 - - 0. join关系是用A表的第一条第二条，开始逐步去链接B表中的每一条，建立一张新的临时表，即A * B, 不是A的第一条对应B的第一条，A的第二条对应B的第二条。不该有这要的头脑模型 A <==> B。
 - - 1. innerjoin，只包含了tableA与tableB联接字段相等的记录，交集
-- - 1. tableA join tableB的结果中，既有tableA中的所有记录，同时还包括了与右表中联接字段相等的记录，所以返回的记录总数一定是大于或等于tableA的记录总数。 rightjoin同理
+- - 1. tableA join tableB的结果中，既有tableA中的所有记录，同时还包括了与右表中联接字段相等的记录，所以返回的记录总数一定是大于或等于tableA的记录总数（一对多的时候小心）。 rightjoin同理
 -  mysql limit 0, 100;取第二页为：limit 101,100; 100是要取得条数
 -  查数据模块，一定要考虑所有写入数据得情况，观察所有数据。写入数据不是自己写得，不能凭自己得臆想确定表里面得数据。
 -  完整得使用完我们得产品。
